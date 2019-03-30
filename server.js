@@ -10,6 +10,7 @@ router.get('/test', function(req, res) {
     res.status(200).send('Hello world');
 });
 
+app.use('/test', router);
 app.use('/api', router);
 
 app.listen(port, function() {
