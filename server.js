@@ -8,7 +8,7 @@ var port = process.env.PORT || 80;
 router.get('/list', function(req, res) {
     res.status(200).send('Endpoint to get all tickets');
 });
-router.get('/id', function(req, res) {
+router.get('/ticket/id', function(req, res) {
     res.status(200).send('Endpoint to get a single ticket');
 });
 router.post('/ticket', function(req, res){
