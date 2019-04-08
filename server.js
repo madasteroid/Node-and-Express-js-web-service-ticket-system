@@ -7,7 +7,7 @@ var port = process.env.PORT || 80;
 const tickets = require('./tickets');
 
 router.get('/list', function(req, res) {   // here you can get all the ticket listed
-    res.status(200).send('./tickets');
+    res.status(200).send('tickets');
 });
 
 
@@ -51,9 +51,7 @@ router.get('/ticket/:id',(req, res) =>{     //list of single ticket with id curr
     res.send(ticket);
 })
 
-app.use('/ticket', router);
-app.use('/list', router);
-app.use('/id', router);
+
 app.use('/rest', router);
 app.use(express.json());
 
