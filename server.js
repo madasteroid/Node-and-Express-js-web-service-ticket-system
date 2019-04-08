@@ -5,6 +5,7 @@ var router = express.Router();
 var port = process.env.PORT || 80;
 
 const tickets = require('./tickets');
+app.use(express.json());
 
 router.get('/list', function(req, res) {   // here you can get all the ticket listed
     res.status(200).send('tickets');
@@ -55,7 +56,7 @@ app.use('/ticket', router);
 app.use('/list', router);
 app.use('/id', router);
 app.use('/rest', router);
-app.use(express.json());
+
 
 
 app.listen(port, function() {
