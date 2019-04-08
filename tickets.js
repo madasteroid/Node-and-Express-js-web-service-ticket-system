@@ -1,4 +1,4 @@
-
+module.exports = tickets;
 let tickets = [
     {
        "id": 1,
@@ -31,6 +31,124 @@ let tickets = [
        "follower_ids": [6256, 324],
        "tags": ["enterprise", "printers"],
       }
+      ,
+
+      {
+       "id": 3,
+       "created_at": "04-02-2019",
+       "updated_at": "04-04-2019",
+       "type": "basketball",
+       "subject": "Match between Pelicans and Kings",
+       "description": "Smoothie King Center ",
+       "priority": "high",
+       "status": "open",
+       "recipient": "john.burris@selu.edu",
+       "submitter": "prakash.timalsina@selu.edu",
+       "assignee_id": 6256,
+       "follower_ids": [6256, 324],
+       "tags": ["enterprise", "printers"],
+      }
+      ,
+
+      {
+       "id": 4,
+       "created_at": "04-02-2019",
+       "updated_at": "04-04-2019",
+       "type": "basketball",
+       "subject": "Match between Pelicans and Kings",
+       "description": "Smoothie King Center ",
+       "priority": "high",
+       "status": "open",
+       "recipient": "john.burris@selu.edu",
+       "submitter": "prakash.timalsina@selu.edu",
+       "assignee_id": 6256,
+       "follower_ids": [6256, 324],
+       "tags": ["enterprise", "printers"],
+      }
+      ,
+
+      {
+       "id": 5,
+       "created_at": "04-02-2019",
+       "updated_at": "04-04-2019",
+       "type": "basketball",
+       "subject": "Match between Pelicans and Kings",
+       "description": "Smoothie King Center ",
+       "priority": "high",
+       "status": "open",
+       "recipient": "john.burris@selu.edu",
+       "submitter": "prakash.timalsina@selu.edu",
+       "assignee_id": 6256,
+       "follower_ids": [6256, 324],
+       "tags": ["enterprise", "printers"],
+      }
+      ,
+
+      {
+       "id": 6,
+       "created_at": "04-02-2019",
+       "updated_at": "04-04-2019",
+       "type": "basketball",
+       "subject": "Match between Pelicans and Kings",
+       "description": "Smoothie King Center ",
+       "priority": "high",
+       "status": "open",
+       "recipient": "john.burris@selu.edu",
+       "submitter": "prakash.timalsina@selu.edu",
+       "assignee_id": 6256,
+       "follower_ids": [6256, 324],
+       "tags": ["enterprise", "printers"],
+      }
+      ,
+
+      {
+       "id": 7,
+       "created_at": "04-02-2019",
+       "updated_at": "04-04-2019",
+       "type": "basketball",
+       "subject": "Match between Pelicans and Kings",
+       "description": "Smoothie King Center ",
+       "priority": "high",
+       "status": "open",
+       "recipient": "john.burris@selu.edu",
+       "submitter": "prakash.timalsina@selu.edu",
+       "assignee_id": 6256,
+       "follower_ids": [6256, 324],
+       "tags": ["enterprise", "printers"],
+      }
+      ,
+
+      {
+       "id": 8,
+       "created_at": "04-02-2019",
+       "updated_at": "04-04-2019",
+       "type": "basketball",
+       "subject": "Match between Pelicans and Kings",
+       "description": "Smoothie King Center ",
+       "priority": "high",
+       "status": "open",
+       "recipient": "john.burris@selu.edu",
+       "submitter": "prakash.timalsina@selu.edu",
+       "assignee_id": 6256,
+       "follower_ids": [6256, 324],
+       "tags": ["enterprise", "printers"],
+      }
+      ,
+
+      {
+       "id": 9,
+       "created_at": "04-02-2019",
+       "updated_at": "04-04-2019",
+       "type": "basketball",
+       "subject": "Match between Pelicans and Kings",
+       "description": "Smoothie King Center ",
+       "priority": "high",
+       "status": "open",
+       "recipient": "john.burris@selu.edu",
+       "submitter": "prakash.timalsina@selu.edu",
+       "assignee_id": 6256,
+       "follower_ids": [6256, 324],
+       "tags": ["enterprise", "printers"],
+      }
 ];
 
-module.exports = tickets;
