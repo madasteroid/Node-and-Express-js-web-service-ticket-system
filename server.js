@@ -11,7 +11,7 @@ router.get('/list', function(req, res) {
 });
 
 
-router.get('/ticket/id',(req, res) =>{
+router.get('/ticket/:id',(req, res) =>{
     const ticket = tickets.find(t => t.id === parseInt(req.params.id));
     if(!ticket) res.status(404).send('Ticket not found.');
     res.send(ticket);
@@ -21,7 +21,7 @@ router.get('/ticket/id',(req, res) =>{
 
  router.post('/ticket', (req,res) => {
     const ticket = {
-        id: tickets.length+1,
+        id: tickets.length + 1,
         created_at: req.body.created_at,
         updated_at: req.body.updated_at,
         type: req.body.type,
