@@ -1,4 +1,4 @@
-module.exports = tickets;
+
 let tickets = [
     {
        "id": 1,
@@ -151,4 +151,4 @@ let tickets = [
        "tags": ["enterprise", "printers"],
       }
 ];
-
+module.exports = tickets;
