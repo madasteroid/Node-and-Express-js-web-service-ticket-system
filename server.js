@@ -30,7 +30,10 @@ router.get('/ticket/id',(req, res) =>{
         priority: req.body.priority,
         status: req.body.status,
         recipient: req.body.recipient,
-        submitter: req.body.submitter
+        submitter: req.body.submitter,
+        assignee_id: req.body.assignee_id,
+        follower_ids: req.body.follower_ids,
+        tags: req.body.tags
     };
     if( !ticket.created_at || 
         !ticket.updated_at || 
@@ -40,6 +43,9 @@ router.get('/ticket/id',(req, res) =>{
         !ticket.priority || 
         !ticket.status || 
         !ticket.recipient ||
+        !ticket.assignee_id||
+        !ticket.follower_ids||
+        !ticket.tags||
         !ticket.submitter) res.status(404).send('No complete ticket information.');
     tickets.push(ticket);
     res.send(ticket);
