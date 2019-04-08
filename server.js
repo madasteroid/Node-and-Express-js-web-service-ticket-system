@@ -11,7 +11,7 @@ router.get('/list', function(req, res) {
 });
 
 
-router.get('/ticket/:id',(req, res) =>{
+router.get('/ticket/id',(req, res) =>{
     const ticket = tickets.find(t => t.id === parseInt(req.params.id));
     if(!ticket) res.status(404).send('Ticket not found.');
     res.send(ticket);
