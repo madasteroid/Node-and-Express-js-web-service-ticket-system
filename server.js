@@ -6,12 +6,12 @@ var port = process.env.PORT || 80;
 
 const tickets = require('./tickets');
 
-router.get('/list', function(req, res) {
-    res.status(200).send('List of all tickets');
+router.get('/list', function(req, res) {   // here you can get all the ticket listed
+    res.status(200).send('ticekts');
 });
 
 
-router.get('/ticket/:id',(req, res) =>{
+router.get('/ticket/:id',(req, res) =>{     //list of single ticket with id currently 1-9
     const ticket = tickets.find(t => t.id === parseInt(req.params.id));
     if(!ticket) res.status(404).send('Ticket not found.');
     res.send(ticket);
@@ -19,7 +19,7 @@ router.get('/ticket/:id',(req, res) =>{
  });
 
 
- router.post('/ticket', (req,res) => {
+ router.post('/ticket', (req,res) => {       //function to post a ticket and incomplete ticket will show no complete ticket information
     const ticket = {
         id: tickets.length + 1,
         created_at: req.body.created_at,
