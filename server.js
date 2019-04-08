@@ -7,7 +7,7 @@ var port = process.env.PORT || 80;
 const tickets = require('./tickets');
 
 router.get('/list', function(req, res) {   // here you can get all the ticket listed
-    res.status(200).send('ticekts');
+    res.status(200).send('tickets');
 });
 
 
