@@ -1,4 +1,3 @@
-module.exports = tickets;
 
 let tickets = [
     {
@@ -34,3 +33,4 @@ let tickets = [
       }
 ];
 
+module.exports = tickets;
